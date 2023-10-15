@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    width: 100%;
+}
+ul{
+    margin: 2vw auto;
+    width: 30%;
+    text-align: center;
+    font-size: 30px;
+}

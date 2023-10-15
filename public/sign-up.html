@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form id="formPost" action="/sign-up" method="POST" enctype="multipart/form-data">
+
+        <img id="avatarImage" class="hide fit-size" alt="Avatar" />
+        <label
+          id="avatarLabel"
+          for="avatarSelect"
+          class="previewAvatar"
+          >Select Avatar</label>
+
+          <input
+          id="avatarSelect"
+          type="file"
+          name="avatarImgName"
+          class="disable"
+          accept="image/*"/>
+
+        <input type="text" placeholder="login:" name="loginUp" required>
+        <input type="password" placeholder="password:" name="passwordUp" required>
+        <input type="password" placeholder="repeat password:" name="repeatedPassword" required>
+        <input type="email" placeholder="email:" name="emailUp" required>
+    </form>
+
+    <button id = "sendInfo"> sign up</button>
+</body>
+</html>
